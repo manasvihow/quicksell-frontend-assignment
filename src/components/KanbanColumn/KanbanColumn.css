@@ -1,0 +1,129 @@
+.kanban-column {
+  border-radius: 0.5rem; 
+  max-width: 400px; 
+  /* width: 100%;  */
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; 
+  gap: 2rem; 
+}
+
+.header-left {
+  display: flex;
+  align-items: flex-baseline;
+  justify-content: space-between;
+  gap: 0.5rem; 
+}
+
+.user-header-icons {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-header-icons .avail {
+  position: absolute;
+  left: 70%;
+}
+
+.header-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem; 
+}
+
+.column-title {
+  font-weight: 500;
+  font-size: 0.8rem; 
+}
+
+.ticket-count {
+  color: #666;
+  font-size: 0.8rem; 
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem; 
+}
+
+.buttons button {
+  border: none;
+  background-color: transparent;
+}
+
+.buttons button img {
+  width: 1rem; 
+  height: 1rem; 
+}
+
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+
+@media (max-width: 768px) {
+  .kanban-column {
+    padding: 1rem; 
+  }
+
+  .column-header {
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    /* gap: 6rem; */
+  }
+  
+  .user-header-icons {
+    scale: 80%;
+  }
+
+  .column-title {
+    font-size: 0.7rem; 
+  }
+
+  .ticket-count {
+    font-size: 0.7rem; 
+  }
+
+  .buttons button img {
+    width: 0.7rem; 
+    height: 0.7rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .kanban-column {
+    padding: 0.5rem; 
+  }
+
+  .header-left {
+    gap: 0.2rem; 
+  }
+
+  .column-title {
+    font-size: 0.7rem; 
+  }
+
+  .ticket-count {
+    font-size: 0.6rem; 
+  }
+
+  .buttons {
+    gap: 0.5rem; 
+  }
+
+  .buttons button img {
+    width: 0.8rem; 
+    height: 0.8rem; 
+  }
+}

@@ -1,0 +1,140 @@
+.ticket-card {
+  background-color: #FFFFFF;
+  padding: 1rem 1.5rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 300px; 
+  width: 100%; 
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.4rem; 
+}
+
+.ticket-id {
+  color: #666;
+  font-size: 0.8rem; 
+}
+
+h4 {
+  font-size: 0.8rem; 
+}
+
+.user {
+  position: relative;
+}
+
+.user-avatar {
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 50%;
+}
+
+.user-available {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+.ticket-title {
+  font-weight: 500;
+  margin-bottom: 1rem; 
+}
+
+.ticket-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.priority_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.2rem; 
+  padding: 0.2rem 0.5rem; 
+}
+
+.bullet {
+  height: 0.6rem; 
+  width: 0.6rem; 
+  background-color: #BFC3C4;
+  border-radius: 50%;
+}
+
+.ticket-tag {
+  padding: 0.2rem 0.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem; 
+  font-size: 0.6rem; 
+  border: 1px solid #e0e0e0;
+  border-radius: 0.2rem; 
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .ticket-card {
+    padding: 0.8rem 1rem; 
+  }
+
+  .ticket-id, h4, .ticket-title, .ticket-header {
+    font-size: 0.8rem; 
+  }
+
+  .user-avatar {
+    width: 2rem; 
+    height: 2rem; 
+  }
+
+  .ticket-footer {
+    gap: 0.3rem; 
+  }
+
+  .bullet {
+    height: 0.6rem; 
+    width: 0.6rem; 
+  }
+
+  .ticket-tag {
+    font-size: 0.6rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .ticket-card {
+    padding: 0.5rem 0.8rem; 
+  }
+
+  .ticket-id, h4, .ticket-title {
+    font-size: 0.8rem; 
+  }
+
+  .user-avatar {
+    width: 0.8rem; 
+    height: 0.8rem; 
+  }
+
+  /* .ticket-footer {
+    flex-direction: column; 
+    align-items: flex-start; 
+  } */
+
+  .priority_icon {
+    padding: 0.1rem 0.3rem; 
+  }
+
+  .bullet {
+    height: 0.6rem; 
+    width: 0.6rem; 
+  }
+
+  .ticket-tag {
+    font-size: 0.6rem; 
+  }
+}

@@ -1,0 +1,52 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #F4F6FA;
+}
+
+.app-header {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.board-container {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+}
+
+.columns-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 670px) {
+  .columns-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .columns-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .columns-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.loading-message {
+  padding: 2rem; 
+  text-align: center; 
+}
+
+.error-message {
+  padding: 2rem; 
+  color: #dc2626;
+  text-align: center; 
+}
